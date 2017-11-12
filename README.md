@@ -1,6 +1,7 @@
 # Timber/ Kotlin Live Templates
 
-Collection of Live Templates for Android Studio that make writing log statements easier than typing method name and arguments manually.
+Collection of Live Templates for Android Studio that make writing log statements easier than typing everything by hand.
+
 
 Import `LogTimberKotlin.xml` file into your Android Studio config folder (`/config/templates`) and you are good to go.
 
