@@ -1,0 +1,51 @@
+<templateSet group="LogTimberKotlin">
+  <template name="tlom" value="timber.log.Timber.$level$($log_body$)" description="Timber.level(&quot;method, args&quot;)" toReformat="true" toShortenFQNames="true">
+    <variable name="level" expression="" defaultValue="&quot;d&quot;" alwaysStopAt="true" />
+    <variable name="log_body" expression="groovyScript(&quot;def params = _2.collect {it + ': $' + it}.join(', '); return '\&quot;' + _1 + (params.empty  ? '' : ', ' + params) + '\&quot;'&quot;, kotlinFunctionName(), functionParameters())" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="tlomd" value="timber.log.Timber.d($log_body$)" description="Timber.debug(&quot;method, args&quot;)" toReformat="true" toShortenFQNames="true">
+    <variable name="log_body" expression="groovyScript(&quot;def params = _2.collect {it + ': $' + it}.join(', '); return '\&quot;' + _1 + (params.empty  ? '' : ', ' + params) + '\&quot;'&quot;, kotlinFunctionName(), functionParameters())" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="tlome" value="timber.log.Timber.e($log_body$)" description="Timber.error(&quot;method, args&quot;)" toReformat="true" toShortenFQNames="true">
+    <variable name="log_body" expression="groovyScript(&quot;def params = _2.collect {it + ': $' + it}.join(', '); return '\&quot;' + _1 + (params.empty  ? '' : ', ' + params) + '\&quot;'&quot;, kotlinFunctionName(), functionParameters())" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="tlomi" value="timber.log.Timber.i($log_body$)" description="Timber.info(&quot;method, args&quot;)" toReformat="true" toShortenFQNames="true">
+    <variable name="log_body" expression="groovyScript(&quot;def params = _2.collect {it + ': $' + it}.join(', '); return '\&quot;' + _1 + (params.empty  ? '' : ', ' + params) + '\&quot;'&quot;, kotlinFunctionName(), functionParameters())" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="tlomv" value="timber.log.Timber.v($log_body$)" description="Timber.verbose(&quot;method, args&quot;)" toReformat="true" toShortenFQNames="true">
+    <variable name="log_body" expression="groovyScript(&quot;def params = _2.collect {it + ': $' + it}.join(', '); return '\&quot;' + _1 + (params.empty  ? '' : ', ' + params) + '\&quot;'&quot;, kotlinFunctionName(), functionParameters())" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="tlomw" value="timber.log.Timber.w($log_body$)" description="Timber.warn(&quot;method, args&quot;)" toReformat="true" toShortenFQNames="true">
+    <variable name="log_body" expression="groovyScript(&quot;def params = _2.collect {it + ': $' + it}.join(', '); return '\&quot;' + _1 + (params.empty  ? '' : ', ' + params) + '\&quot;'&quot;, kotlinFunctionName(), functionParameters())" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="tlomww" value="timber.log.Timber.wtf($log_body$)" description="Timber.wtf(&quot;method, args&quot;)" toReformat="true" toShortenFQNames="true">
+    <variable name="log_body" expression="groovyScript(&quot;def params = _2.collect {it + ': $' + it}.join(', '); return '\&quot;' + _1 + (params.empty  ? '' : ', ' + params) + '\&quot;'&quot;, kotlinFunctionName(), functionParameters())" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="tlomit" value="timber.log.Timber.i($log_body$)" description="Timber.info(&quot;method, args&quot;)" toReformat="true" toShortenFQNames="true">
+    <variable name="log_body" expression="groovyScript(&quot;def params = _2.collect {it + ': $' + it + &quot;, thread: ${Thread.currentThread()}&quot;}.join(', '); return '\&quot;' + _1 + (params.empty  ? '' : ', ' + params) + '\&quot;'&quot;, kotlinFunctionName(), functionParameters())" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
